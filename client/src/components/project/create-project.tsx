@@ -286,7 +286,7 @@ export const CreateProject = ({
                                                                             wm.user._id === m.user
                                                                     );
 
-                                                                return `${member?.user.name} (${member?.role})`;
+                                                                return `${member?.user.name} (${member?.role})  `;
                                                             })
                                                         ) : (
                                                             `${selectedMembers.length} members selected`

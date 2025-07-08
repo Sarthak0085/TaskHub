@@ -6,6 +6,7 @@
 
 ## 📁 Project Structure
 
+```text 
 TaskHub/
 │
 ├── sever/                       # Node.js + Express API with MongoDB
@@ -32,26 +33,34 @@ TaskHub/
 │         └── ...               # Other frontend files
 │
 └── README.md                   # Project documentation
-
+```
 
 ---
 
 ## ⚙️ Tech Stack
 
-**Frontend:**
-- React + TypeScript
-- Vite
-- TailwindCSS + ShadCN UI
-- React Router
-- React Query
+### 🖥️ Frontend
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [ShadCN UI](https://ui.shadcn.com/)
+- [Zod](https://zod.dev/)
+- [React Query](https://tanstack.com/query/latest)
+- [Axios](https://axios-http.com/)
 
-**Backend:**
-- Node.js + Express.js
-- MongoDB + Mongoose
-- Cloudinary SDK
-- JWT Auth
-- bcrypt, zod, dotenv
-- Cloudinary (for image upload)
+### 🔧 Backend
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB Atlas](https://www.mongodb.com/atlas)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Mongoose](https://mongoosejs.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Zod](https://zod.dev/)
+- [JWT](https://jwt.io/)
+
+### ☁️ Deployment
+- [Render](https://render.com/)
+- [Vercel](https://vercel.com/)
 
 ---
 
@@ -176,10 +185,40 @@ pnpm run format   # Format using Prettier
 ### 🏠 Home Page
 ![Home](https://task-hub-lyart-one.vercel.app/screenshot/home.png)
 
-### 📋 Dashboard
+### 📝 Register Page
+![Register](https://task-hub-lyart-one.vercel.app/screenshot/sign-up.png)
+
+### 🔐 Login Page
+![Login](https://task-hub-lyart-one.vercel.app/screenshot/login.png)
+
+### 📊 Dashboard Page
 ![Dashboard](https://task-hub-lyart-one.vercel.app/screenshot/dashboard.png)
 
-### 👥 Members Management
+### 🙍‍♂️ Profile Page
+![Profile](https://task-hub-lyart-one.vercel.app/screenshot/profile.png)
+
+### 🏢 Workspaces Page
+![Workspaces](https://task-hub-lyart-one.vercel.app/screenshot/workspaces.png)
+
+### 📁 Projects Page
+![Projects](https://task-hub-lyart-one.vercel.app/screenshot/projects.png)
+
+### ✅ Tasks Page
+![Tasks](https://task-hub-lyart-one.vercel.app/screenshot/tasks.png)
+
+### ⚙️ Workspace Settings Page
+![Workspace Settings](https://task-hub-lyart-one.vercel.app/screenshot/workspace-settings.png)
+
+### 🔍 Task Details Page
+![Task Details](https://task-hub-lyart-one.vercel.app/screenshot/task-details.png)
+
+### 📌 My Tasks Page
+![My Tasks](https://task-hub-lyart-one.vercel.app/screenshot/my-tasks.png)
+
+### 📦 Archived Page
+![Archived](https://task-hub-lyart-one.vercel.app/screenshot/archived.png)
+
+### 👥 Members Page
 ![Members](https://task-hub-lyart-one.vercel.app/screenshot/members.png)
 
 ---

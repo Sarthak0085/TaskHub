@@ -14,6 +14,12 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET!,
 });
 
+const allowedOrigins = [
+   process.env.FRONTEND_URL, 
+  "http://localhost:5173",
+  "https://task-hub-lyart-one.vercel.app",
+];
+
 const app = express();
 
 connectDB();
@@ -24,9 +30,18 @@ app.use(express.urlencoded({ limit: '5mb', extended: true }));
 app.use(morgan('dev'));
 app.use(
     cors({
-        origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+        origin: function (origin, callback) {
+            // Allow requests with no origin (like mobile apps or curl)
+            if (!origin) return callback(null, true);
+            if (allowedOrigins.includes(origin)) {
+                return callback(null, true);
+            } else {
+                return callback(new Error("Not allowed by CORS"));
+            }
+        },
         methods: ['POST', 'GET', 'DELETE', 'PUT'],
         allowedHeaders: ['Content-Type', 'Authorization'],
+        credentials: true,
     })
 );
 
