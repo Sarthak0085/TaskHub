@@ -1,0 +1,48 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "This contains the APIs of the Taskhub",
+    "main": "index.ts",
+    "type": "module",
+    "scripts": {
+        "format": "prettier --write .",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "concurrently \" tsc -w\" \"nodemon dist/index.js\""
+    },
+    "keywords": [
+        "NodeJs",
+        "Express",
+        "Mongo DB"
+    ],
+    "author": "Sarthak",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/ejs": "^3.1.5",
+        "@types/express": "^5.0.3",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/morgan": "^1.9.10",
+        "@types/node": "^24.0.7",
+        "@types/nodemailer": "^6.4.17",
+        "concurrently": "^9.2.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.6.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "bcryptjs": "^3.0.2",
+        "cloudinary": "^2.7.0",
+        "cors": "^2.8.5",
+        "dotenv": "^17.0.0",
+        "ejs": "^3.1.10",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.16.1",
+        "morgan": "^1.10.0",
+        "nodemailer": "^7.0.4",
+        "zod": "^3.25.67",
+        "zod-express-middleware": "^1.4.0"
+    }
+}
