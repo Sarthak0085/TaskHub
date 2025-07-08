@@ -5,13 +5,33 @@
 ---
 
 ## 📁 Project Structure
-taskhub/
+
+TaskHub/
 │
-├── server/ # Node.js + Express + MongoDB + Typescript
+├── sever/                       # Node.js + Express API with MongoDB
+│     └── src/
+│          ├── controllers/      # Route handlers
+│          ├── models/           # Mongoose models
+│          ├── routes/           # API routes
+│          ├── middleware/       # Custom middleware (e.g., auth, error handler)
+│          ├── utils/            # Utility functions (e.g., sendEmail, cloudinary)
+│          ├── libs/             # libs files (e.g., schema)
+│            ├── config/           # configuration files (e.g., db connection)
+│          ├── index.ts          # Entry point for the backend
+│          └── ...               # Other backend files
 │
-├── client/ # React + TypeScript + Vite + ShadCN UI
 │
-└── README.md # Project documentation
+├── client/               # React + TypeScript + Vite + ShadCN UI
+│     └── src/
+│         ├── components/       # Shared UI components
+│         ├── pages/            # Page components (routes)
+│         ├── hooks/            # Custom React hooks
+│         ├── hooks/            # Custom React hooks
+│         ├── lib/              # schema and helpers function
+│         ├── main.tsx          # starting point
+│         └── ...               # Other frontend files
+│
+└── README.md                   # Project documentation
 
 
 ---
@@ -51,7 +71,7 @@ cd server
 pnpm install
 ```
 
-Create .env file in /server
+Create `.env` file in `/server`
 
 ```bash
 PORT = 4000
@@ -81,7 +101,7 @@ cd client
 pnpm install
 ```
 
-Create .env file in /client
+Create `.env` file in `/client`
 
 ```bash
 VITE_API_URL= http://localhost:4000/api/v1
@@ -154,13 +174,13 @@ pnpm run format   # Format using Prettier
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](./screenshots/home.png)
+![Home](https://task-hub-lyart-one.vercel.app/screenshot/home.png)
 
 ### 📋 Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](https://task-hub-lyart-one.vercel.app/screenshot/dashboard.png)
 
 ### 👥 Members Management
-![Members](./screenshots/members.png)
+![Members](https://task-hub-lyart-one.vercel.app/screenshot/members.png)
 
 ---
 
